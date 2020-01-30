@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practice 2</title>
+
+
+    <!-- THE IDEA HERE IS TO CREATE AN AESTHETICALLY PLEASING PAGE LAYOUT
+    FOR THE BLOG POSTS, WITH A HEADER AND FOOTER, WITH A SCROLL READER
+    (FOR NOW, SOON TO BE A CAROUSEL?) -->
+
+
+    <style>
+        * {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            background: black;
+            color: white;
+        }
+
+        .showcase {
+            font-size: 1.2rem;
+            text-align: center;
+            background: black;
+            color: white;
+        }
+
+        .piece {
+            color: white;
+        }
+
+        .piece span {
+            color: red;
+        }
+
+        nav ul li {
+            text-align: center;
+            display: inline;
+            padding: 20px 30px;
+            margin-right: 40px;
+            margin-bottom: 20px;
+            background: linear-gradient(white, black, white);
+            color: white;
+            border-radius: 15px;
+            text-decoration: none;
+
+        }
+
+        nav {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+     
+
+        nav ul li a {
+            background: initial;
+
+        }
+
+        .floatleft {
+            float: left;
+            position: relative;
+        }
+
+        .floatright {
+            float: right;
+            position: relative;
+        }
+
+        .show {
+            background-image: url("./img/img6.jpg");
+            margin: 20px auto;
+            width: 90%;
+            padding-bottom: 50px;
+            height: 500px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            font-size: 1.3rem;
+
+        }
+        .show2{
+            
+        background-image: url("./img/img9.jpg");
+            margin: 0px auto;
+            width: 90%;
+            padding-bottom: 50px;
+            height: 500px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            font-size: 1.2rem;
+        }
+        .container {
+            border-radius: 50px;
+            box-shadow: 15px 0px 18px rgba(252, 251, 251, .2),
+                -15px 0px 18px rgba(252, 251, 251, .2);
+            clear: both;
+            margin: auto;
+            width: 70%;
+            height: 500px;
+            overflow: scroll;
+
+
+        }
+
+        .container  {
+            align-content: center;
+            display:block;
+            border-radius: 20px;
+
+        }
+
+        .paragraph1 {
+            float: left;
+            max-width: 30%;
+        }
+        .paragraph2{
+            float:left;
+            max-width:25%;
+               }
+        .paragraph3{
+            float:right;
+            max-width:25%;
+        }
+
+        .img {
+            width: 90%;
+        }
+        @media (max-width: 767px) {
+            *{
+                font-size: .9rem;
+                float:none;
+                margin: 0 auto;
+            }
+            nav >*{
+                float:none;
+                clear:none;
+             margin: 10px;
+             padding: 10px;
+             
+            }
+            .container {
+                max-height: 500px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="showcase">
+            <h1 class="piece">The <span>Quiet</span> Game</h1>
+            <h2 class="author">Brian Milotte</h2>
+
+            <p class="tldr">This is just some random text, but someday soon it will be the summary of the page's current
+                work</p>
+        </div>
+        <nav>
+            <ul>
+                <li class="floatleft"><a href="#">Home</a></li>
+                <li class="floatleft"><a href="#">About</a></li>
+                <li class="floatleft"><a href="#">Titles</a></li>
+                <li class="floatright"><a href="#">PANIC!</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="show">
+                <p class="paragraph1">
+                    sample text. lots and lots of sample text. we put this text on the right of the photo because theres
+                    alot of black over there.
+                    sample text. lots and lots of sample text. we put this text on the right of the photo because theres
+                    alot of black over there.
+                    sample text. lots and lots of sample text. we put this text on the right of the photo because theres
+                    alot of black over there.
+                    sample text. lots and lots of sample text. we put this text on the right of the photo because theres
+                    alot of black over there.
+                    sample text. lots and lots of sample text. we put this text on the right of the photo because theres
+                    alot of black over there.
+                </p>
+            </div>
+            <div class="show2">
+                <p class="paragraph2">
+                    sample text. lots and lots of sample text. we put this text on the right of the photo because theres
+                    alot of black over there.sample text. lots and lots of sample text. we put this text on the right of
+                    the photo because theres alot of black over there.sample text. lots and lots of sample text. we put
+                    this text on the right of the photo because theres alot of black over there.sample text. lots and
+                    lots of sample text. we put this text on the right of the photo because theres alot of black over
+                    there.sample text. lots and lots of sample text.
+                </p>
+                <p class="paragraph3">
+                    sample text. lots and lots of sample text. we put this text on the right of the photo because theres
+                    alot of black over there.sample text. lots and lots of sample text. we put this text on the right of
+                    the photo because theres alot of black over there.sample text. lots and lots of sample text. we put
+                    this text on the right of the photo because theres alot of black over there.sample text. lots and
+                    lots of sample text. we put this text on the right of the photo because theres alot of black over
+                    there.
+                </p>
+            </div>
+            <img class="img" src= alt="#">
+            <img class="img" src="./img/img5.jpg" alt="#">
+        </div>
+        <footer>
+            <div id="copy">
+                Copyright &copy; 2019 Brian Milotte
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
